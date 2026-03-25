@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jesinra Cargo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <div class="logo">Jesinra Cargo</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#track">Track</a>
+    <a href="#login">Login</a>
+  </nav>
+</header>
+
+<!-- Dashboard (Figure 2) -->
+<section id="home" class="hero">
+  <h1>Fast & Reliable Cargo Service</h1>
+  <p>Ship your goods anywhere, anytime</p>
+  <button onclick="scrollToSection('services')">Explore Services</button>
+</section>
+
+<!-- Services (Figure 5) -->
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Air Freight</h3>
+      <p>Fast delivery through air transport</p>
+    </div>
+
+    <div class="card">
+      <h3>Sea Freight</h3>
+      <p>Cost-effective shipping via sea</p>
+    </div>
+
+    <div class="card">
+      <h3>Land Transport</h3>
+      <p>Reliable ground logistics</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Product Display (Figure 6) -->
+<section id="products">
+  <h2>Available Services</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Standard Delivery</h3>
+      <p>3-5 Days Delivery</p>
+    </div>
+
+    <div class="card">
+      <h3>Express Delivery</h3>
+      <p>1-2 Days Delivery</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Track Feature (Figure 7) -->
+<section id="track">
+  <h2>Track Your Shipment</h2>
+  <input type="text" id="trackingId" placeholder="Enter Tracking ID">
+  <button onclick="trackPackage()">Track</button>
+  <p id="result"></p>
+</section>
+
+<!-- Payment (Figure 8) -->
+<section id="payment">
+  <h2>Payment</h2>
+  <button onclick="showPayment()">Proceed to Payment</button>
+</section>
+
+<!-- Login (Figure 4) -->
+<section id="login">
+  <h2>Login</h2>
+  <form onsubmit="return loginUser()">
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+</section>
+
+<!-- Register (Figure 3) -->
+<section id="register">
+  <h2>Register</h2>
+  <form onsubmit="return registerUser()">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit">Register</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Jesinra Makmur Group</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
